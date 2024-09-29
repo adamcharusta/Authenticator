@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Authenticator.Infrastructure</RootNamespace>
+    <AssemblyName>Authenticator.Infrastructure</AssemblyName>
+  </PropertyGroup>
+
+</Project>
