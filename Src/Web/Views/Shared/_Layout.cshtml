@@ -4,9 +4,10 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - Web</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css?v=5.3.3"/>
+    <link rel="stylesheet" href="~/lib/toastr/css/toastr.min.css?v=2.1.4"/>
+    <link rel="stylesheet" href="lib/sweetalert2/css/sweetalert2.min.css?v=11.14.1"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/Web.styles.css" asp-append-version="true"/>
 </head>
 <body>
 <header>
@@ -41,9 +42,12 @@
         &copy; 2024 - Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
     </div>
 </footer>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/lib/jquery/js/jquery.min.js?v=3.7.1"></script>
+<script src="~/lib/bootstrap/js/bootstrap.bundle.min.js?v=5.3.3"></script>
+<script src="~/lib/jquery-validation/js/jquery.validate.min.js?v=1.19.5"></script>
+<script src="~/lib/jquery-validation/js/additional-methods.min.js?v=1.19.5"></script>
+<script src="~/lib/jquery-validation-unobtrusive/js/jquery.validate.unobtrusive.min.js?v=4.0.0"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
+@await RenderSectionAsync("Scripts", false)
 </body>
 </html>
